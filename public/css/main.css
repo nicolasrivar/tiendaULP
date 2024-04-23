@@ -1,0 +1,169 @@
+/*font de google*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --lg-font: "Merriweather", serif;
+}
+body{
+    font-family: var(--lg-font)
+}
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-brand span{
+    letter-spacing: 3px;
+    font-family: var(--lg-font);
+    margin-top: 5px;
+}
+
+.container h1{
+    font-family: var(--lg-font);
+}
+
+.navbar-brand img{
+    width: 30px;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+
+#productos{
+    margin-top: 100px;
+}
+#productos h1{
+    border-bottom: 2px solid black;
+}
+
+#productos .card h3{
+    font-size: 25px;
+    font-family: var(--lg-font);
+}
+
+#productos .card p {
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: var(--lg-font);
+
+}
+
+/*.bg-primary{
+    background-color: pink)!important;
+}
+*/
+.image-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .sobrepuesta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    object-fit: contain;
+  }
+
+.btn-primary {
+    background-color: white; 
+    border-color: black; 
+  }
+  
+  .btn-primary:hover {
+    background-color: blue; 
+    border-color: blue; 
+  }
+.fa-cart-shopping {
+    font-size: 1.5rem; 
+    color: black;
+}
+.fa-cart-shopping:hover {
+    font-size: 1.5rem; 
+    color: white;
+}
+
+.oculta{
+    display: none;
+}
+
+.oferta{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.porcentaje{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#productos .card h2{
+    font-family: var(--lg-font);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#productos .card h2 span{
+    float:right;
+    cursor: pointer;
+}
+
+#productos .card{
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+
+}
+#productos .card img {
+    height: 300px;
+    width: 259px;
+    border-radius: 10%;
+}
+
+#carrito .card h2{
+    font-family: var(--lg-font);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#carrito .card h2 span{
+    float:right;
+    cursor: pointer;
+}
+
+#carrito .card{
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+
+}
+#carrito .card img {
+    height: 300px;
+    width: 259px;
+    border-radius: 10%;
+    margin-right: 30px;
+}
+
+#carrito .btn-primary{
+    --bs-btn-color: #000;
+    margin: 10px;
+}
+
+#checkout {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+#checkout .card{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+
+}
+.texto-footer{
+    color: white;
+}
+#custom-width {
+    width: 40%; 
+}

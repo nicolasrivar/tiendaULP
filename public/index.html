@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda ULP</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!--fontawesmome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="image/logo ulp.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="image/logo ulp.png" alt="" srcset="">
+                <span class="text-uppercase fw-lighter ms-2 ">
+                    Tienda ULP
+                </span>
+            </a>
+
+            <div>
+                <button type="button" class="btn position-relative" id="botonCarro" title="Ir al carro">
+                    <i class="fa fa-shopping-cart">
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">
+                            0
+                        </span>
+                    </i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" id="productos">
+        <h1 class="text-center">PRODUCTOS</h1>
+        <div class="row" style="margin-top: 30px;" id="grilla">
+            <!--Decidí hacerlo desde js-->
+            <!--<div class="col-md-3 py-md-0"  id ="1">
+                <div class="card">
+                    <img src="https://placehold.co/400" alt="" class="img-fluid mx-auto">
+                    <div class="card-body">
+                        <h3 class="text-center">cosa</h3>
+                        <p class="text-center">descripcion</p>
+                        <h2>$1000 <span> <li class="fa-solid fa-cart-shopping"></li></span></h2> 
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md6 col-lg-3" id="custom-width">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">
+                        <img src="image/logo ulp.png" alt="" srcset="" style="height: 20px;">
+                        TIENDA ULP
+                    </a>
+                    <p class="texto-footer mt-3">
+                        Nicolas Julian Rivarola ULP Web II <br>
+                        Profesores: <br>
+                         Fernando Saez Bonilla, <br>
+                        Mariano Torres Quintero
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <ul class="">
+                        <li class="my-3">
+                            <a href="" class="text-white text-decoration-none"><i class="fa-brands fa-github"></i> Github </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--jquery-->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!--bootstrap-->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
