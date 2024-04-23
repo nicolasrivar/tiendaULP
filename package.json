@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo",
-	“start:prod”: “node dist/src/main”
+	"start:prod": "node dist/src/main"
   },
   "author": "",
   "license": "ISC",
