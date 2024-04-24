@@ -68,24 +68,32 @@ function crearHTML() {
     actualizarNumeroCarrito()
   
     grilla.addEventListener('click', function(event) {
-      const button = event.target.closest('.carrito-btn');//uso closest para evitar que no me tome el icono de fontawesome cuando hago click
+      const button = event.target.closest('.carrito-btn');
     
       if (button && !button.classList.contains('disabled')) { 
         const itemId = button.dataset.itemId;
     
-        if (!carrito.includes(itemId)) {
-          carrito.push(itemId);
+        // Check if the item is already in the cart
+        const itemIndex = carrito.findIndex(item => item.id === itemId);
+    
+        if (itemIndex === -1) {
+          // If item is not in the cart, add it as an object
+          const newItem = { id: itemId, cantidad: 1 };
+          carrito.push(newItem);
           localStorage.setItem('carrito', JSON.stringify(carrito));
-          //console.log('Carrito: ', carrito);
     
           button.classList.add('disabled');
           const icon = button.querySelector('i');
           icon.classList.remove('fa-cart-shopping');
           icon.classList.add('fa-check');
     
-          alert('Articulo añadido al carrito!');
+          alert('Artículo añadido al carrito!');
         } else {
-          alert('El articulo ya se encuentra en el carrito');
+          // If item is already in the cart, increment its quantity
+          carrito[itemIndex].cantidad++;
+          localStorage.setItem('carrito', JSON.stringify(carrito));
+    
+          alert('El artículo ya se encuentra en el carrito');
         }
       }
     
@@ -123,7 +131,11 @@ function actualizarBotones() {
   const botones = document.querySelectorAll('.carrito-btn');
   botones.forEach(button => {
     const itemId = button.dataset.itemId;
-    if (carrito.includes(itemId)) {
+
+    // Check if the item is in the cart
+    const itemInCart = carrito.find(item => item.id === itemId);
+
+    if (itemInCart) {
       button.classList.add('disabled');
       const icon = button.querySelector('i');
       icon.classList.remove('fa-cart-shopping');

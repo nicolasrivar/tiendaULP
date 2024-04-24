@@ -192,8 +192,6 @@ app.post('/traducir', async (req, res) => {     //al momento de traducir hubo pr
           });
         });
 
-
-
         res.json(objetoFinal);
 
       } catch (error) {
