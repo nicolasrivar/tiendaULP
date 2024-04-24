@@ -39,7 +39,7 @@ app.get('/api', async (req, res) => {
 
     const [dataApi, descuentos] = await Promise.all([
       axios.get("https://fakestoreapi.com/products"),
-      axios.get('http://localhost:8008/descuentos')
+      axios.get('https://tiendaulp.onrender.com/descuentos')
     ]);
 
     const [data, data2] = await Promise.all([
@@ -63,7 +63,7 @@ app.get('/api', async (req, res) => {
       }
     });
 
-      const response3 = await axios.post('http://localhost:8008/traducir', {
+      const response3 = await axios.post('https://tiendaulp.onrender.com/traducir', {
         objetos: data
       }, {
         headers: {

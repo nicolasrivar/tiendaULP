@@ -1,6 +1,6 @@
 import { actualizarNumeroCarrito} from './localStorage.js';
 document.getElementById("botonCarro").addEventListener("click", function() {
-    window.location.href = "http://localhost:8008/carro"; 
+    window.location.href = "https://tiendaulp.onrender.com/carro"; 
 })
 
 let lista =[];
